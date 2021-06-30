@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CBBB4233268D0465005CF991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB4232268D0465005CF991 /* AppDelegate.swift */; };
-		CBBB4235268D0465005CF991 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB4234268D0465005CF991 /* SceneDelegate.swift */; };
 		CBBB4237268D0465005CF991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB4236268D0465005CF991 /* ViewController.swift */; };
 		CBBB423A268D0465005CF991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBBB4238268D0465005CF991 /* Main.storyboard */; };
 		CBBB423C268D0468005CF991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBBB423B268D0468005CF991 /* Assets.xcassets */; };
@@ -16,9 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB272B0F268D0B3900E1974B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CBBB422F268D0465005CF991 /* ios15test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios15test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBBB4232268D0465005CF991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBBB4234268D0465005CF991 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CBBB4236268D0465005CF991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBBB4239268D0465005CF991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBBB423B268D0468005CF991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		CBBB4226268D0465005CF991 = {
 			isa = PBXGroup;
 			children = (
+				CB272B0F268D0B3900E1974B /* README.md */,
 				CBBB4231268D0465005CF991 /* ios15test */,
 				CBBB4230268D0465005CF991 /* Products */,
 			);
@@ -57,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				CBBB4232268D0465005CF991 /* AppDelegate.swift */,
-				CBBB4234268D0465005CF991 /* SceneDelegate.swift */,
 				CBBB4236268D0465005CF991 /* ViewController.swift */,
 				CBBB4238268D0465005CF991 /* Main.storyboard */,
 				CBBB423B268D0468005CF991 /* Assets.xcassets */,
@@ -139,7 +138,6 @@
 			files = (
 				CBBB4237268D0465005CF991 /* ViewController.swift in Sources */,
 				CBBB4233268D0465005CF991 /* AppDelegate.swift in Sources */,
-				CBBB4235268D0465005CF991 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
 				INFOPLIST_FILE = ios15test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
 				INFOPLIST_FILE = ios15test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
