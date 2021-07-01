@@ -14,7 +14,14 @@ class ios15testTests: XCTestCase {
 
     func testFeatureKey() throws {
         let result = sut.featureKey
-        XCTAssertEqual(result, .type)
+        let expectedResult: UIFontDescriptor.FeatureKey
+        #if swift(>=5.5)
+        expectedResult = .type
+        #else
+        expectedResult = .featureIdentifier
+        #endif
+
+        XCTAssertEqual(result, expectedResult)
     }
 
 }

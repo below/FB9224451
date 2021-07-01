@@ -9,7 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
     var featureKey: UIFontDescriptor.FeatureKey {
+        #if swift(>=5.5)
         return .type
+        #else
+        return .featureIdentifier
+        #endif
     }
 
     override func viewDidLoad() {
