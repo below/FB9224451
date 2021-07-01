@@ -14,7 +14,7 @@ class ios15testTests: XCTestCase {
 
     func testFeatureKey() throws {
         let result = sut.featureKey
-        XCTAssertEqual(result, .featureIdentifier)
+        XCTAssertEqual(result, .type)
     }
 
 }
