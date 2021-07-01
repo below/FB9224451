@@ -8,11 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var featureKey: UIFontDescriptor.FeatureKey {
+        return .featureIdentifier
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let featureKey = UIFontDescriptor.FeatureKey.featureIdentifier
+//        let test = self.featureKey
 
     }
 
