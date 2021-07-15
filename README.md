@@ -2,6 +2,12 @@
 
 The `UIFontDescriptor.FeatureKey.featureIdentifier` seems to be unavailable on iOS 14 when built with Xcode 13 against the iOS 15 SDK.
 
+# Update: Duplicate
+
+This seems to be a duplicate of FB79090498, mentioned in the [Xcode 13 Beta 3 Release Notes](https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes):
+
+> Apps that contain Swift code referencing featureIdentifier or typeIdentifier fail to launch on earlier OS releases. (79090498)
+
 # Update: Workaround
 
 Changing `.featureIdentifier` to `.type` results in successful tests on all iOS versions. There is however no warning that this is necessary if the depoloyment target is not equal to iOS 15.
